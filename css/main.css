@@ -1,0 +1,30 @@
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
+.row {
+  background-color: lightgray;
+  padding: 5px;
+}
+
+#page-image {
+  width: 100%;
+}
+
+#main-heading {
+  text-transform: uppercase;
+  color: blue;
+  margin: auto;
+}
+
+#other-heading {
+  text-transform: uppercase;
+  color: green;
+  margin: auto;
+}
+
+.some-text {
+  color: purple;
+}

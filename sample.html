@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flexbox Demo</title>
+    <style type="text/css">
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .box {
+        height: 100px;
+        text-align: center;
+        width: 100%;
+      }
+
+      /* min-width = start doing style at this point
+      max-width = stop doing style at this point */
+
+      @media screen and (max-width: 450px) {
+        header { width: 100%; background-color: lime; order: 1; }
+        .red { width: 50%; background-color: red; order: 2; }
+        .orange { width: 50%; background-color: orange; order: 3; }
+        .turquoise { width: 100%; background-color: turquoise; order: 4; }
+        .cyan { width: 20%; background-color: cyan; order: 5; }
+        .purple { width: 60%; background-color: purple; order: 6; }
+        .green { width: 20%; background-color: green; order: 7; }
+      }
+
+      @media screen and (min-width: 451px) {
+        header { width: 100%; background-color: lime; order: 1; }
+        .red { width: 100%; background-color: red; order: 2; }
+        .orange { width: 100%; background-color: orange; order: 3; }
+        .turquoise { width: 100%; background-color: turquoise; order: 4; }
+        .cyan { width: 100%; background-color: cyan; order: 5; }
+        .purple { width: 100%; background-color: purple; order: 6; }
+        .green { width: 100%; background-color: green; order: 7; }
+      }
+      
+      @media screen and (min-width: 601px) {
+        header { width: 100%; background-color: lime; order: 1; }
+        .red { width: 50%; background-color: red; order: 2; }
+        .orange { width: 50%; background-color: orange; order: 3; }
+        .turquoise { width: 25%; background-color: turquoise; order: 4; }
+        .cyan { width: 25%; background-color: cyan; order: 5; }
+        .purple { width: 25%; background-color: purple; order: 6; }
+        .green { width: 25%; background-color: green; order: 7; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="box lime"></header>
+      <div class="box red"></div>
+      <div class="box orange"></div>
+      <div class="box turquoise"></div>
+      <div class="box cyan"></div>
+      <div class="box purple"></div>
+      <div class="box green"></div>
+    </div>
+  </body>
+</html>
