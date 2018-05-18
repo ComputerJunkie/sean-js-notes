@@ -203,7 +203,7 @@ The element uses itself to remove itself from it's parent.
 Replace an image on the page with a different image.
 ```
 const pageImage = document.getElementById('page-image');
-pageImage.src="img./Z.jpg";
+pageImage.src="img/Z.jpg";
 ```
 
 ## And another example
@@ -259,3 +259,35 @@ _now that you've created an ID, use it to access the element and make a style ch
 
 _or skip the last two lines of code and just use this line instead_
 * `mainHeading.nextElementSibling.style.backgroundColor = 'red';`
+
+# Accessing an element's classes
+
+First, let's first use `.className`
+* Returns a string of all classes (**string** being the key word).
+* Would be much nicer to return a list but I digress...
+
+_first select the class and assign it to a variable_
+* `const mainHeading = document.querySelector('#main-heading');`
+
+_then get a list of all the classes and store in a variable_
+* `const listOfClasses = mainHeading.className;`
+
+_convert the space separated classes into an array_
+* `const arrayOfClasses = listOfClasses.split(' ');`
+
+_display the array in the console_
+* `console.log(arrayOfClasses);`
+
+_replace existing classes with this new class_
+* `mainHeading.className = "im-the-new-class";`
+
+Next lets use the `.classList` property instead for more gooder results. We do the same thing by first selecting, assigning to a variable and then assigning the list to a variable and then displaying the results in the console. Same thing but less work.
+* `const mainHeading = document.querySelector('#main-heading');`
+* `const listOfClasses = mainHeading.classList;`
+* `console.log(listOfClasses);`
+
+Also, `.classList` has a bunch of it's own properties...
+* .add() _add a class to the list_
+* .remove() _remove a class from the list_
+* .toggle() _add if not there, remove if there_
+* .containts() _returns boolean_
