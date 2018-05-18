@@ -194,6 +194,31 @@ Then use the ``.parentElement()`` to move focus to the child element.
 `mainHeading.parentElement.removeChild(mainHeading);`
 The element uses itself to remove itself from it's parent.
 
+
+
+## More examples
+Replace an image on the page with a different image.
+```
+const pageImage = document.getElementById('page-image');
+pageImage.src="img./Z.jpg";
+```
+
+## And another example
+Append a child element to an existing element.
+First, create a new element and assign it to a variable...
+* `const newHeading = document.createElement('h1');`
+
+Now add text to the new element...
+* `newHeading.textContent = "New Heading!";`
+
+Now select the element that will be the parent...
+* `const mainHeading = document.querySelector('h1');`
+
+And finally, append the child to the parent element...
+* `mainHeading.appendChild(newHeading);`
+
+
+# Style Page Content
 ## Rules of CSS Specificity
 1. Least specific: Rules in a stylesheet
 2. Rules in a <style> tag
@@ -214,24 +239,5 @@ const mainHeading = document.querySelector('h1');
 mainHeading.style.cssText = 'color: blue; background-color: orange; font-size: 3.5em';
 ```
 
-
-
-## More examples
-```
-const pageImage = document.getElementById('page-image');
-pageImage.src="img./Z.jpg";
-```
-
-## And another example
-Append a child element to an existing element.
-First, create a new element and assign it to a variable...
-* `const newHeading = document.createElement('h1');``
-
-Now add text to the new element...
-* `newHeading.textContent = "New Heading!";``
-
-Now select the element that will be the parent...
-* `const mainHeading = document.querySelector('h1');``
-
-And finally, append the child to the parent element...
-* `mainHeading.appendChild(newHeading);``
+* Select an h1 `const heading = $0`
+* Change it's color to orange `heading.style.color = 'orange';`
