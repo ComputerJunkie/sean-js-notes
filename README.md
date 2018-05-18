@@ -240,5 +240,5 @@ mainHeading.style.cssText = 'color: blue; background-color: orange; font-size: 3
 ```
 
 * `const heading = $0` // select an h1
-* `heading.style.color = 'orange';` // Change it's color to orange
-* 
+* `heading.style.color = 'orange';` // change it's color to orange
+* `heading.style.fontSize = '2em';` // bump up the font size
