@@ -21,5 +21,15 @@
 // mainHeading.insertAdjacentHTML('afterend', htmlTextToAdd);
 
 
+// const mainHeading = document.querySelector('h1');
+// mainHeading.style.cssText = 'color: blue; background-color: orange; font-size: 3.5em';
+
+
+// first, select the h1 and assign it to a variable
 const mainHeading = document.querySelector('h1');
-mainHeading.style.cssText = 'color: blue; background-color: orange; font-size: 3.5em';
+
+// now attach the variable to nextElementSibling.setAttribute and somehow try to memorize all of this
+mainHeading.nextElementSibling.setAttribute('id', 'heading-sibling');
+
+// now that you've created an ID, use it to access the element and make a style change and somehow memorize this line in addition to the previous line. I guess this will all eventually burn itself into my brain. 😜
+document.querySelector('#heading-sibling').style.backgroundColor = 'red';
