@@ -60,3 +60,15 @@ fi
 `alias ...='cd ...'`
 `alias now='date +"%T"'`
 `alias sl='ls'`
+
+# Switching Bewteen user accounts in Ubuntu 18.04 on Windows 10
+* First, make sure to install Ubuntu 18.04 from the Windows Store
+* Launch Ubuntu
+* If you need to create a new user account, do this:
+* `sudo adduser newuser`
+* Then follow the prompts
+* Once you have the user account created, you can switch between accounts (root and your user account)
+* Close the Ubuntu window
+* Launch a Command Prompt in Windows
+* `ubuntu config --default-user username` // replace "username" with your username
+* Now launch the Ubuntu window again. It should be logged in as your new user account
