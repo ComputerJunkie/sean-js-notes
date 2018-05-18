@@ -1,6 +1,8 @@
 # JUST A BUNCH OF NOTES AND THINGS
 So as I've been going through the Git and JavaScript lessons, I've been doing a ton of note-taking. I'm writing all my notes in markdown and including them with some HTML, CSS and JS files so I can practice things with Chrome Dev Tools as they come up. If there is anything you find useful here, by all means feel free to fork, clone, star, watch, copy, paste, look at or simply disregard completely. I'm sure these notes won't make much sense to anyone reading them. But maybe there is a bit of code or something here that you might find useful. Anyway, back to the note-taking...
 
+Also, my Git and Linux command notes are in the **notes** folder.
+
 # JavaScript and the DOM
 1. Lesson 1 - The Document Object Model
 2. Lesson 2 - Creating Content with JavaScript
