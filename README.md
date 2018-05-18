@@ -247,3 +247,15 @@ mainHeading.style.cssText = 'color: blue; background-color: orange; font-size: 3
 * `heading.style.fontSize = '2em';` // bump up the font size
 
 ## Now let's talk about setting an element's attributes
+
+_first, select the h1 and assign it to a variable_
+* `const mainHeading = document.querySelector('h1');`
+
+_now attach the variable to nextElementSibling.setAttribute and somehow try to memorize all of this_
+* `mainHeading.nextElementSibling.setAttribute('id', 'heading-sibling');`
+
+_now that you've created an ID, use it to access the element and make a style change and somehow memorize this line in addition to the previous line. I guess this will all eventually burn itself into my brain. 😜_
+* `document.querySelector('#heading-sibling').style.backgroundColor = 'red';`
+
+_or skip the last two lines of code and just use this line instead_
+* `mainHeading.nextElementSibling.style.backgroundColor = 'red';`

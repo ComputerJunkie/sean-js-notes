@@ -29,7 +29,10 @@
 const mainHeading = document.querySelector('h1');
 
 // now attach the variable to nextElementSibling.setAttribute and somehow try to memorize all of this
-mainHeading.nextElementSibling.setAttribute('id', 'heading-sibling');
+// mainHeading.nextElementSibling.setAttribute('id', 'heading-sibling');
 
 // now that you've created an ID, use it to access the element and make a style change and somehow memorize this line in addition to the previous line. I guess this will all eventually burn itself into my brain. 😜
-document.querySelector('#heading-sibling').style.backgroundColor = 'red';
+// document.querySelector('#heading-sibling').style.backgroundColor = 'red';
+
+// or just use this line instead
+mainHeading.nextElementSibling.style.backgroundColor = 'red';
