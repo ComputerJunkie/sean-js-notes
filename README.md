@@ -291,3 +291,10 @@ Also, `.classList` has a bunch of it's own properties...
 * .remove() _remove a class from the list_
 * .toggle() _add if not there, remove if there_
 * .containts() _returns boolean_
+
+You can also add an class...
+* `const mainHeading = document.querySelector('h1');` _select_
+* `mainHeading.classList.contains('ank-student');` _verify class exists_
+* `mainHeading.classList.add('ice-cream');` _add class_
+* `mainHeading.classList.add('ice-cream');` _remove_
+* `mainHeading.classList.toggle('ice-cream');` _toggle_
