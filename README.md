@@ -216,21 +216,22 @@ mainHeading.style.cssText = 'color: blue; background-color: orange; font-size: 3
 
 
 
-==================================================================
+## More examples
+```
 const pageImage = document.getElementById('page-image');
 pageImage.src="img./Z.jpg";
+```
 
-
-==================================================================
+## And another example
 Append a child element to an existing element.
 First, create a new element and assign it to a variable...
-const newHeading = document.createElement('h1');
+* `const newHeading = document.createElement('h1');``
 
 Now add text to the new element...
-newHeading.textContent = "New Heading!";
+* `newHeading.textContent = "New Heading!";``
 
 Now select the element that will be the parent...
-const mainHeading = document.querySelector('h1');
+* `const mainHeading = document.querySelector('h1');``
 
 And finally, append the child to the parent element...
-mainHeading.appendChild(newHeading);
+* `mainHeading.appendChild(newHeading);``
