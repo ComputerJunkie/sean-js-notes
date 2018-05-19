@@ -1,4 +1,36 @@
 // ===========================================================
+// FOR OF LOOP
+
+const names = ['Sean', 'Stephanie', 'Milo', 'Macy'];
+
+for (const name of names) {
+  console.log(name);
+}
+
+// ===========================================================
+// OBJECT LITERAL SHORTHAND
+// let type = 'quartz';
+// let color = 'rose';
+// let carat = 21.29;
+
+// const gemstone = {
+//   type: type,
+//   color: color,
+//   carat: carat
+// };
+//
+// console.log(gemstone);
+
+// or the shorthand...
+
+// let gemstone = {
+//   type,
+//   color,
+//   carat,
+//   calculateWorth(){ ... } // shorthand way of writing an anonymous function
+// };
+
+// ===========================================================
 // ELEMENT CLASSES
 
 // return a string of all classes (string being the key word)

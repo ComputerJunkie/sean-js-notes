@@ -27,6 +27,26 @@ const colors = `List of Colors
 console.log(colors);
 ```
 
+## iteration
+_example of using i as an iterator in a for loop_
+```
+const years = ['1999', '2001', '2013', '2016'];`
+
+for (let i = 0; i < years.length; i++) {
+  console.log(years[i]);
+}
+```
+* **iterable protocol**: allows JavaScript objects to define or customize their iteration behavior.
+* **for ..of loop**: a loop that iterates over iterable objects (objects that have implented the new iterable interface).
+
+_example_
+```
+const names = ['James', 'Kavita', 'Richard'];
+
+for (const name of names) {
+  console.log(name);
+}
+```
 
 # JavaScript and the DOM
 1. Lesson 1 - The Document Object Model
