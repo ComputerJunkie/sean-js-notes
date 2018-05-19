@@ -4,6 +4,30 @@ So as I've been going through the Git and JavaScript lessons, I've been doing a 
 Also, my Git and Linux command notes are in the **notes** folder.
 
 
+# Syntax: Destructuring Arrays
+```
+/*
+ * Programming Quiz: Destructuring Arrays (1-3)
+ *
+ * Use destructuring to initialize the variables `one`, `two`, and `three`
+ * with the colors from the `things` array.
+ */
+
+const things = ['red', 'basketball', 'paperclip', 'green', 'computer', 'earth', 'udacity', 'blue', 'dogs'];
+
+const [one] = things;
+const [,,,two] = things;
+const [,,,,,,,three] = things;
+
+const colors = `List of Colors
+1. ${one}
+2. ${two}
+3. ${three}`;
+
+console.log(colors);
+```
+
+
 # JavaScript and the DOM
 1. Lesson 1 - The Document Object Model
 2. Lesson 2 - Creating Content with JavaScript

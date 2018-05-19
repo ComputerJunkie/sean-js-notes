@@ -122,7 +122,7 @@ First, create your working directory on your local computer with all your files 
 * `git remote v` _check to make sure that what you did is correct_
 * `git push origin master` _provide the shortname and branch_
 * `git pull origin master` _if there are more commits on the remote them pull them to local_
-* `git fetch origin master` _retrive commits from a remote repo branch_
+* `git fetch origin master` _retrieve commits from a remote repo branch_
 
 ## Working on another Developer's repository
 * Forking a Repository is to make an identical copy from another repo to your repo.
