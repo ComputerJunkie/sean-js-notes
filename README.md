@@ -3,6 +3,11 @@ So as I've been going through the Git and JavaScript lessons, I've been doing a 
 
 Also, my Git and Linux command notes are in the **notes** folder.
 
+Adding one more line of text just because...
+
+
+
+
 # JavaScript and the DOM
 1. Lesson 1 - The Document Object Model
 2. Lesson 2 - Creating Content with JavaScript
