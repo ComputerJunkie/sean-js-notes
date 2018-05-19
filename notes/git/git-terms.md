@@ -1,7 +1,13 @@
 # Version Control System (VCS) / Source Code Manager (SCM)
+Note: Just a random note here, but you can cache your git credentials for Linux with the following:
+`git config --global credentials.helper 'cache --timeout=10000000`
 
+And for Mac...
+`git credential-osxkeychain`
 
-An SCM is another name for a VCS. Git is an SCM and therefore a VCS.
+Now commit a file and trigger a password challenge to make sure it works. Carry on...
+
+* An SCM is another name for a VCS. Git is an SCM and therefore a VCS.
 
 ## Commit
 Save the state of the project in Git by taking a picture of what your files look like at that moment and store a reference to that snapshot. Similar to a save-point in a video game.
